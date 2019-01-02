@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    min-width: 320px;
     text-align:center;
     font-family: 'Roboto', sans-serif;
     color: #4a4a4a;
@@ -171,7 +172,71 @@ footer .nav {
         display: inline;
         padding-left: 20px;
     }
-
+}
+/*---------- Media Query ----------*/
+@media screen and (min-device-width: 1024px) {
+    /*---------- Tablet element layout ----------*/
+    h3 {
+        font-size: 0.8em;
+    }
+    p {
+        font-size: 0.8em;
+        padding: 0.4em;
+    }
+    /*---------- Tablet header layout ----------*/
+    .title {
+        font-size: 2em;
+        float: left;
+        vertical-align: baseline;
+    }
+    .nav {
+        float: right;
+        vertical-align: baseline;
+    }
+    .nav li{
+        display: inline-block;
+        background-color: inherit;
+    }
+    .profile {
+        float: right;
+        width: 40%;
+        margin-left: 1em;
+        margin-bottom: 3em;
+    }
+    header div p {
+        text-align: left;
+        font-size: 1em;
+    }
+    /*---------- Tablet content layout ----------*/
+    .portfolio {
+        display: inline-block;
+        width: 50%;
+        margin-left: -5px;
+        padding-right: 10px;
+        vertical-align: top
+    }
+    .contentT {
+        margin-bottom: 0.3em;
+    }
+    /*---------- Tablet Contact and footer ----------*/
+    .contact p {
+        padding: 0 10%;
+        font-size: 1em;
+    }
+    .back2top {
+        display: none;
+    }
+    .foot-menu {
+        display: inline;
+        float: right;
+        font-size: 0.8em;
+        padding-top: 25px;
+    }
+    footer li{
+        display: inline;
+        padding-left: 20px;
+    }
+}
 /*---------- clearfix ----------*/
 .clearfix::after {
   content: "";
