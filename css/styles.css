@@ -1,0 +1,25 @@
+/*--------- Text styling ---------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+* {
+    box-sizing: border-box;
+    text-align:center;
+    font-family: sans-serif, 'Roboto';
+    border: red 1px solid;
+}
+img {
+    max-width: 100%;
+}
+
+.wrap {
+    width: 90vw;
+    margin:auto;
+}
+nav ul {
+    padding-left: 0;
+}
+
+nav a,
+nav li {
+    list-style-type: none;
+    text-decoration: none;
+}
