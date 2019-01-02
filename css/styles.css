@@ -1,5 +1,5 @@
 /*--------- Basic element styling ---------*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900');
 * {
     box-sizing: border-box;
 }
@@ -13,31 +13,38 @@ img {
     max-width: 100%;
 }
 
-h1 {
+h1,
+h3 {
     font: 1em;
+    font-weight: 900;
+}
+h4 {
+    font-weight: normal;
 }
 a{
     text-decoration: none;
 }
 p{
-    font-size: 1.25em
+    font-size: 1em;
+    font-weight: 300;
+    padding-bottom: 2em;
 }
-header {
-    margin-bottom: 5em
-}
+
 /*--------- Basic layout styling ---------*/
 .wrap {
     width: 90%;
     margin:auto;
 }
-
-
-
-/*---------- header styles ----------*/
-
 .light-grey {
     background-color: #fafafa
 }
+
+/*---------- header styles ----------*/
+
+header {
+    margin-bottom: 5em
+}
+
 .title {
     margin: 0;
     padding: 1em 0 0.5em;
@@ -62,4 +69,32 @@ header {
     width: 70%
 }
 
-/*---------- header styles ----------*/
+/*---------- Content styles ----------*/
+
+/*---------- Contact & footer styles ----------*/
+.contact {
+    padding: 3em 0;
+    border-bottom: 1px #4a4a4a solid;
+}
+.contactTitle {
+    text-transform:uppercase;
+    font-size: 1em;
+}
+.contact p {
+    padding: 0;
+}
+.contactDetails {
+    display: inline-block;
+    color: #7f7f7f;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.student-name {
+    float: left;
+    vertical-align: top;
+}
+.bck2top {
+    float: right;
+    vertical-align: top;
+}
