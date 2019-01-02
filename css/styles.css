@@ -1,22 +1,32 @@
-/*--------- Text styling ---------*/
+/*--------- Basic element styling ---------*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 * {
     box-sizing: border-box;
+}
+body {
     text-align:center;
-    font-family: sans-serif, 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
     /* border: red 1px solid; */
 }
 img {
     max-width: 100%;
 }
 
+h1 {
+    font: 1em;
+}
+a{
+    text-decoration: none;
+}
+/*--------- Basic layout styling ---------*/
 .wrap {
-    width: 90vw;
+    width: 90%;
     margin:auto;
 }
-.textGrey {
-    color: #4a4a4a;
-}
+
+
+
 /*---------- header styles ----------*/
 
 .light-grey {
@@ -24,14 +34,21 @@ img {
 }
 .title {
     margin: 0;
-    padding: 0.5em 0;
+    padding: 1em 0 0.5em;
 }
 .nav ul {
     padding-left: 0;
+    margin-bottom: 2em
 }
 
-.nav a,
+
 .nav li {
     list-style-type: none;
-    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4a4a4a;
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 0.4em;
 }
