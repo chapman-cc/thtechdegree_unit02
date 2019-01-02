@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-align:center;
     font-family: sans-serif, 'Roboto';
-    border: red 1px solid;
+    /* border: red 1px solid; */
 }
 img {
     max-width: 100%;
@@ -14,12 +14,24 @@ img {
     width: 90vw;
     margin:auto;
 }
-nav ul {
+.textGrey {
+    color: #4a4a4a;
+}
+/*---------- header styles ----------*/
+
+.light-grey {
+    background-color: #fafafa
+}
+.title {
+    margin: 0;
+    padding: 0.5em 0;
+}
+.nav ul {
     padding-left: 0;
 }
 
-nav a,
-nav li {
+.nav a,
+.nav li {
     list-style-type: none;
     text-decoration: none;
 }

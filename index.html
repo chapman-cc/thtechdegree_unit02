@@ -9,65 +9,68 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="wrap">
-    <header>
-        <h1 id="title">Student Name</h1>
-        <div class="nav">
+<body>
+    <header class="light-grey">
+        <h1 class="title textGrey" id="title">Student Name</h1>
+        <div class="nav wrap">
             <nav>
                 <ul>
-                    <a href="#" target="_self">
+                    <a href="#title" target="_self">
                         <li>Home</li>
                     </a>
-                    <a href="#" target="_self">
+                    <a href="#portfolio" target="_self">
                         <li>Portfolio</li>
                     </a>
-                    <a href="#" target="_self">
+                    <a href="#contact" target="_self">
                         <li>Contact</li>
                     </a>
                 </ul>
             </nav>
         </div>
+
+        <!-- Introduction -->
+        <div class="wrap">
+            <img src="images/responsive-layout-profile.png" alt="Profile Photo" class="profile">
+            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
     </header>
-    <!-- Introduction -->
+    <!-- End of Introduction -->
+
+    <!-- Content -->
     <main>
-        <img src="images/responsive-layout-profile.png" alt="Profile Photo" class="profile">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <div class="wrap">
+            <h2 id="portfolio">Portfolio</h2>
 
-        <!-- End of Introduction -->
+            <img class="projectpic" src="images/portfolio-1.png" alt="Marketing picture">
+            <P class="contentT">Marketing Page</P>
+            <p class="contentP">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
 
-        <!-- Content -->
-        <h2>Portfolio</h2>
+            <img class="projectpic" src="images/portfolio-2.png" alt="Search page picture">
+            <p class="contentT">Search Page</p>
+            <p class="contentP">This project searches through a specific database to find information that the user is trying to look up.</p>
 
-        <img class="projectpic" src="images/portfolio-1.png" alt="Marketing picture">
-        <P class="contentT">Marketing Page</P>
-        <p class="contentP">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+            <img class="projectpic" src="images/portfolio-3.png" alt="Travel app picture">
+            <p class="contentT">Travel App</p>
+            <p class="contentP">This project compares travel times based on different transportation methods and tells you the best one.</p>
 
-        <img class="projectpic" src="images/portfolio-2.png" alt="Search page picture">
-        <p class="contentT">Search Page</p>
-        <p class="contentP">This project searches through a specific database to find information that the user is trying to look up.</p>
+            <img class="projectpic" src="images/portfolio-4.png" alt="Favourite spots map picture">
+            <p class="contentT">Map of Favourite Spots</p>
+            <p class="contentP">This project uses mapping apis to plot points of my favourite spots in the city for a do-it-yourself walking tour.</p>
 
-        <img class="projectpic" src="images/portfolio-3.png" alt="Travel app picture">
-        <p class="contentT">Travel App</p>
-        <p class="contentP">This project compares travel times based on different transportation methods and tells you the best one.</p>
+            <img class="projectpic" src="images/portfolio-5.png" alt="Photo gallery picture">
+            <p class="contentT">Photo Gallery</p>
+            <p class="contentP">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
 
-        <img class="projectpic" src="images/portfolio-4.png" alt="Favourite spots map picture">
-        <p class="contentT">Map of Favourite Spots</p>
-        <p class="contentP">This project uses mapping apis to plot points of my favourite spots in the city for a do-it-yourself walking tour.</p>
-
-        <img class="projectpic" src="images/portfolio-5.png" alt="Photo gallery picture">
-        <p class="contentT">Photo Gallery</p>
-        <p class="contentP">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-
-        <img class="projectpic" src="images/portfolio-6.png" alt="Calculator app picture">
-        <p class="contentT">Calculator</p>
-        <p class="contentP">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-
+            <img class="projectpic" src="images/portfolio-6.png" alt="Calculator app picture">
+            <p class="contentT">Calculator</p>
+            <p class="contentP">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </div>
     </main>
     <!-- End of Content -->
 
     <!-- Contact Section -->
 
-    <h2 id="contact">Contact</h2>
+    <h2 class="wrap" id="contact">Contact</h2>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
     <p class="contactT">Phone<span class="contactDetails">+1(111)555-1234</span></p>
     <p class="contactT">Email<span class="contactDetails">email@yoursite.com</span></p>
