@@ -19,6 +19,12 @@ h1 {
 a{
     text-decoration: none;
 }
+p{
+    font-size: 1.25em
+}
+header {
+    margin-bottom: 5em
+}
 /*--------- Basic layout styling ---------*/
 .wrap {
     width: 90%;
@@ -41,7 +47,6 @@ a{
     margin-bottom: 2em
 }
 
-
 .nav li {
     list-style-type: none;
     text-transform: uppercase;
@@ -49,6 +54,12 @@ a{
     font-weight: bold;
     color: #4a4a4a;
     background-color: #fff;
-    padding: 1em;
+    padding: 0.75em;
     margin-bottom: 0.4em;
+} /* TODO: shortening */
+
+.profile {
+    width: 70%
 }
+
+/*---------- header styles ----------*/
