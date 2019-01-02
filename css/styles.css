@@ -1,14 +1,17 @@
 /*--------- Basic element styling ---------*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900');
+
 * {
     box-sizing: border-box;
 }
+
 body {
     min-width: 320px;
-    text-align:center;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #4a4a4a;
 }
+
 img {
     max-width: 100%;
 }
@@ -17,35 +20,41 @@ h1,
 h3 {
     font: 1em;
     font-weight: 900;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
+
 h4 {
     font-weight: normal;
 }
-a{
+
+a {
     text-decoration: none;
     color: #4a4a4a;
 }
-p{
+
+p {
     font-size: 1em;
     font-weight: 300;
     padding-bottom: 2em;
 }
+
 li {
     list-style-type: none;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 /*--------- Basic layout styling ---------*/
 .wrap {
     width: 90%;
-    margin:auto;
+    margin: auto;
 }
+
 .light-grey {
     background-color: #fafafa
 }
-/*---------- header styles ----------*/
 
+/*---------- header styles ----------*/
 header {
     margin-bottom: 5em
 }
@@ -55,6 +64,7 @@ header {
     padding: 1em 0 0.5em;
     text-transform: capitalize;
 }
+
 .nav ul {
     padding-left: 0;
     margin-bottom: 2em
@@ -68,14 +78,14 @@ header {
     background-color: #fff;
     padding: 0.75em;
     margin-bottom: 0.4em;
-} /* TODO: shortening */
+}
 
+/* TODO: shortening */
 .profile {
     width: 70%
 }
 
 /*---------- Content styles ----------*/
-
 /*---------- Contact & footer styles ----------*/
 .contact {
     padding: 3em 0;
@@ -85,6 +95,7 @@ header {
 .contact p {
     padding: 0;
 }
+
 .contactDetails {
     display: inline-block;
     color: #7f7f7f;
@@ -95,54 +106,66 @@ header {
 .footer {
     height: 5em;
 }
+
 .footer-text {
     padding-top: 40px;
     display: block;
     font-weight: 900;
     vertical-align: baseline;
 }
+
 .student-name {
     float: left;
     font-size: 1em;
     margin: 0;
 }
+
 .back2top {
     float: right;
     font-size: 0.8em;
     text-transform: uppercase;
     padding-top: 42px
 }
+
 footer .nav {
     display: none;
 }
+
 /*---------- Media Query ----------*/
 @media screen and (min-device-width: 768px) {
+
     /*---------- Tablet element layout ----------*/
     h3 {
         font-size: 0.8em;
     }
+
     p {
         font-size: 0.8em;
         padding: 0.4em;
     }
+
     /*---------- Tablet header layout ----------*/
     .title {
         font-size: 2em;
     }
-    .nav li{
+
+    .nav li {
         display: inline-block;
         background-color: inherit;
     }
+
     .profile {
         float: right;
         width: 40%;
         margin-left: 1em;
         margin-bottom: 3em;
     }
+
     header div p {
         text-align: left;
         font-size: 1em;
     }
+
     /*---------- Tablet content layout ----------*/
     .portfolio {
         display: inline-block;
@@ -151,39 +174,48 @@ footer .nav {
         padding-right: 10px;
         vertical-align: top
     }
+
     .contentT {
         margin-bottom: 0.3em;
     }
+
     /*---------- Tablet Contact and footer ----------*/
     .contact p {
         padding: 0 10%;
         font-size: 1em;
     }
+
     .back2top {
         display: none;
     }
+
     .foot-menu {
         display: inline;
         float: right;
         font-size: 0.8em;
         padding-top: 25px;
     }
-    footer li{
+
+    footer li {
         display: inline;
         padding-left: 20px;
     }
 }
+
 /*---------- Media Query ----------*/
 @media screen and (min-device-width: 1024px) {
+
     /*---------- Tablet element layout ----------*/
     .wrap {
         width: 60%;
-        margin:auto;
+        margin: auto;
     }
+
     /*---------- Tablet header layout ----------*/
     .title {
         float: left;
     }
+
     .nav {
         float: right;
         margin-top: 20px
@@ -192,23 +224,27 @@ footer .nav {
     .profile {
         width: 45%;
     }
+
     header div p {
         font-size: 1.4em;
     }
+
     /*---------- Tablet content layout ----------*/
     .portfolio {
         width: 33%;
         margin: 0 -5px 20px 0;
     }
+
     /*---------- Tablet Contact and footer ----------*/
     .contact p {
         padding: 0 20%;
         font-size: 1.2em;
     }
 }
+
 /*---------- clearfix ----------*/
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
