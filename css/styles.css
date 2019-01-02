@@ -39,6 +39,10 @@ p{
     background-color: #fafafa
 }
 
+.flex-container {
+  display: -webkit-inline-flex; /_ Safari _/
+  display: flex;
+}
 /*---------- header styles ----------*/
 
 header {
@@ -90,11 +94,23 @@ header {
     margin-left: 1em;
 }
 
+.footer {
+    height: 5em;
+}
+.footer-text {
+    padding-top: 40px;
+    display: block;
+    font-weight: 900;
+    vertical-align: baseline;
+}
 .student-name {
     float: left;
-    vertical-align: top;
+    font-size: 1em;
+    margin: 0;
 }
 .bck2top {
     float: right;
-    vertical-align: top;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding-top: 42px
 }
