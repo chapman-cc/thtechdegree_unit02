@@ -71,6 +71,9 @@ li {
 .bgcolor {
     background: linear-gradient(to bottom, #4096ee 0%, #60abf8 56%, #7abcff 100%)
 }
+.bgcolor2 {
+    background: linear-gradient(to top, #4096ee 0%, #60abf8 56%, #7abcff 100%)
+}
 
 /*---------- header styles ----------*/
 .intro {
@@ -146,7 +149,6 @@ li {
     .nav ul,
     .nav a {
         flex: 1 300px;
-        /* TODO: increase length of button */
         margin: 0;
         background-color: inherit;
     }
@@ -276,6 +278,10 @@ li {
         width: 90%;
         font-size: 0.9em;
         margin-top: 0.4em;
+    }
+    .skills {
+        justify-content: space-evenly;
+        align-items: flex-start;
     }
 
     /*---------- Tablet Contact and footer ----------*/
