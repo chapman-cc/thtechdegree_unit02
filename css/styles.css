@@ -182,8 +182,9 @@ li {
     }
 
     .portfolio {
-        width: 48%;
+        flex: 1 50%;
         flex-direction: column;
+        padding: 0 0.5em
     }
 
     .contentT {
@@ -232,7 +233,7 @@ li {
         max-width: 1024px;
     }
 
-    /*---------- Tablet header layout ----------*/
+    /*---------- Desktop header layout ----------*/
     .header {
         flex-direction: row;
         justify-content: space-between;
@@ -255,7 +256,7 @@ li {
         text-align: left;
     }
 
-    /*---------- Tablet content layout ----------*/
+    /*---------- Desktop content layout ----------*/
     .portfo-title {
         font-size: 1em;
     }
@@ -267,7 +268,7 @@ li {
     }
 
     .portfolio {
-        width: 32%;
+        flex: 1 33%;
     }
 
     .contentT {
@@ -284,7 +285,7 @@ li {
         align-items: flex-start;
     }
 
-    /*---------- Tablet Contact and footer ----------*/
+    /*---------- Desktop Contact and footer ----------*/
     .contact p {
         width: 60%;
     }
