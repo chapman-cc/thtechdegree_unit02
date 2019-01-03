@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900|Caveat');
 
 /*--------- Basic element styling ---------*/
-
 * {
     box-sizing: border-box;
     /* border: 1px red solid; */
@@ -23,9 +22,11 @@ h3 {
     font-weight: 900;
     margin: 0;
 }
+
 h3 {
     text-transform: uppercase;
 }
+
 h4 {
     font-weight: normal;
 }
@@ -39,20 +40,22 @@ a {
     padding: 0.5em;
     transition: 250ms ease-in;
 }
+
 a:hover {
     /* color: #fff; */
     background-color: #99d6ff;
-
 }
 
 p {
     font-weight: 300;
     padding-bottom: 2em;
 }
+
 ul {
     padding-left: 0;
     list-style-type: none;
 }
+
 li {
     text-transform: uppercase;
     font-weight: bold;
@@ -66,33 +69,28 @@ li {
 }
 
 .bgcolor {
-    background-color: #ccddff
+    background: linear-gradient(to bottom, #4096ee 0%, #60abf8 56%, #7abcff 100%)
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 /*---------- header styles ----------*/
+.intro {
+    padding-bottom: 2em;
+}
 
 .title {
-    margin: 0.5em 0
+    padding: 0.5em 0
 }
-.nav {
-    align-items: stretch;
-}
+
 .intro-article {
     font: 1.2em "Caveat";
     color: #fff;
     text-shadow: 0 1px 5px black;
+    padding-bottom: 0;
+    margin: 0;
 }
+
 .profile {
-    width: 90%;
-    border-radius: 15%;
-    border-color: light-grey;
-    border-style: outset;
-    border-width: thin;
-    border-bottom-width: thick
+    /* width: 90%; */
 }
 
 /*---------- Content styles ----------*/
@@ -105,57 +103,185 @@ li {
 .contact p {
     padding: 0;
 }
+
 .contactDetails {
     display: inline-block;
     color: #7f7f7f;
     font-weight: bold;
     margin-left: 1em;
 }
+
 .footer {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
-
     padding: 2em 0;
 }
+
 .footer h3,
 .back2top {
     font-size: 0.8em;
     background-color: inherit;
 }
+
 .foot-display {
     display: none;
 }
 
 /*---------- Media Query ----------*/
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
-    /*---------- Tablet element layout ----------*/
-
+    /*---------- Tablet base layout ----------*/
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     /*---------- Tablet header layout ----------*/
+    .header {
+        flex-direction: column;
+    }
 
+    .nav ul,
+    .nav a {
+        flex: 1 300px;
+        /* TODO: increase length of button */
+        margin: 0;
+        background-color: inherit;
+    }
+
+    .intro {
+        justify-content: space-between;
+    }
+
+    .profile {
+        order: 1;
+        align-self: flex-start;
+        width: 40%
+    }
+
+    .intro-article {
+        text-align: left;
+        margin-top: 0;
+        width: 50%
+    }
 
     /*---------- Tablet content layout ----------*/
+    .portfo-title {
+        /* font-size: 1em; */
+        padding: 1em 0;
+    }
 
+    .portfolios {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .portfolio {
+        width: 48%;
+        flex-direction: column;
+    }
+
+    .contentT {
+        margin: 0.5em 0
+    }
+
+    .contentP {
+        width: 80%;
+    }
 
     /*---------- Tablet Contact and footer ----------*/
+    .contact {
+        flex-direction: column;
+        padding: 2em 0 1em;
+    }
+
+    .contact-title {
+        font-size: 0.8em
+    }
+
+    .contact p {
+        width: 80%;
+        margin: 0.5em;
+    }
+
+    .back2top {
+        display: none;
+    }
+
+    .footer {
+        padding: 1em 0 0;
+    }
+
+    .foot-display {
+        display: inline-block;
+    }
+
+    .foot-display {
+        font-size: 0.5em
+    }
 }
 
 /*---------- Media Query ----------*/
-@media screen and (min-device-width: 1025px) {
-
-    /*---------- Tablet element layout ----------*/
-
+@media screen and (min-device-width: 1024px) {
+    .wrap {
+        max-width: 1024px;
+    }
 
     /*---------- Tablet header layout ----------*/
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1em 0;
+    }
 
+    .intro {
+        align-items: flex-start;
+    }
+
+    .profile {
+        order: 1;
+        align-self: flex-start;
+        width: 40%
+    }
+
+    .intro-article {
+        font-size: 1.4em;
+        text-align: left;
+    }
 
     /*---------- Tablet content layout ----------*/
+    .portfo-title {
+        font-size: 1em;
+    }
 
+    .portfolios {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .portfolio {
+        width: 32%;
+    }
+
+    .contentT {
+        margin: 1em 0 0
+    }
+
+    .contentP {
+        width: 90%;
+        font-size: 0.9em;
+        margin-top: 0.4em;
+    }
 
     /*---------- Tablet Contact and footer ----------*/
-
+    .contact p {
+        width: 60%;
+    }
 }
 
 /*---------- clearfix ----------*/
