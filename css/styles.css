@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900|Caveat');
+
 /*--------- Basic element styling ---------*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900');
 
 * {
     box-sizing: border-box;
+    /* border: 1px red solid; */
 }
 
 body {
     min-width: 320px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', "Caveat", sans-serif;
     color: #4a4a4a;
 }
 
@@ -18,30 +20,43 @@ img {
 
 h1,
 h3 {
-    font: 1em;
     font-weight: 900;
+    margin: 0;
+}
+h3 {
     text-transform: uppercase;
 }
-
 h4 {
     font-weight: normal;
 }
 
 a {
+    display: block;
     text-decoration: none;
     color: #4a4a4a;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0.5em;
+    transition: 250ms ease-in;
+}
+a:hover {
+    /* color: #fff; */
+    background-color: #99d6ff;
+
 }
 
 p {
-    font-size: 1em;
     font-weight: 300;
     padding-bottom: 2em;
 }
-
-li {
+ul {
+    padding-left: 0;
     list-style-type: none;
+}
+li {
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 /*--------- Basic layout styling ---------*/
@@ -50,39 +65,34 @@ li {
     margin: auto;
 }
 
-.light-grey {
-    background-color: #fafafa
+.bgcolor {
+    background-color: #ccddff
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /*---------- header styles ----------*/
-header {
-    margin-bottom: 5em
-}
 
 .title {
-    margin: 0;
-    padding: 1em 0 0.5em;
-    text-transform: capitalize;
+    margin: 0.5em 0
 }
-
-.nav ul {
-    padding-left: 0;
-    margin-bottom: 2em
+.nav {
+    align-items: stretch;
 }
-
-.nav li {
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    font-weight: bold;
-    background-color: #fff;
-    padding: 0.75em;
-    margin-bottom: 0.4em;
+.intro-article {
+    font: 1.2em "Caveat";
+    color: #fff;
+    text-shadow: 0 1px 5px black;
 }
-
-/* TODO: shortening */
 .profile {
-    width: 70%
+    width: 90%;
+    border-radius: 15%;
+    border-color: light-grey;
+    border-style: outset;
+    border-width: thin;
+    border-bottom-width: thick
 }
 
 /*---------- Content styles ----------*/
@@ -95,151 +105,57 @@ header {
 .contact p {
     padding: 0;
 }
-
 .contactDetails {
     display: inline-block;
     color: #7f7f7f;
     font-weight: bold;
     margin-left: 1em;
 }
-
 .footer {
-    height: 5em;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 
-.footer-text {
-    padding-top: 40px;
-    display: block;
-    font-weight: 900;
-    vertical-align: baseline;
+    padding: 2em 0;
 }
-
-.student-name {
-    float: left;
-    font-size: 1em;
-    margin: 0;
-}
-
+.footer h3,
 .back2top {
-    float: right;
     font-size: 0.8em;
-    text-transform: uppercase;
-    padding-top: 42px
+    background-color: inherit;
 }
-
-.foot-menu {
+.foot-display {
     display: none;
 }
 
 /*---------- Media Query ----------*/
-@media screen and (min-device-width: 768px) {
+@media (min-width: 769px) {
 
     /*---------- Tablet element layout ----------*/
-    h3 {
-        font-size: 0.8em;
-    }
 
-    p {
-        font-size: 0.8em;
-        padding: 0.4em;
-    }
 
     /*---------- Tablet header layout ----------*/
-    .title {
-        font-size: 2em;
-    }
 
-    .nav li {
-        display: inline-block;
-        background-color: inherit;
-    }
-
-    .profile {
-        float: right;
-        width: 40%;
-        margin-left: 1em;
-        margin-bottom: 3em;
-    }
-
-    header div p {
-        text-align: left;
-        font-size: 1em;
-    }
 
     /*---------- Tablet content layout ----------*/
-    .portfolio {
-        display: inline-block;
-        width: 50%;
-        margin-left: -5px;
-        padding-right: 10px;
-        vertical-align: top
-    }
 
-    .contentT {
-        margin-bottom: 0.3em;
-    }
 
     /*---------- Tablet Contact and footer ----------*/
-    .contact p {
-        padding: 0 10%;
-        font-size: 1em;
-    }
-
-    .back2top {
-        display: none;
-    }
-
-    .foot-menu {
-        display: inline;
-        float: right;
-        font-size: 0.8em;
-        padding-top: 25px;
-    }
-
-    footer li {
-        display: inline;
-        padding-left: 20px;
-    }
 }
 
 /*---------- Media Query ----------*/
-@media screen and (min-device-width: 1024px) {
+@media screen and (min-device-width: 1025px) {
 
     /*---------- Tablet element layout ----------*/
-    .wrap {
-        width: 60%;
-        margin: auto;
-    }
+
 
     /*---------- Tablet header layout ----------*/
-    .title {
-        float: left;
-    }
 
-    .nav {
-        float: right;
-        margin-top: 20px
-    }
-
-    .profile {
-        width: 45%;
-    }
-
-    header div p {
-        font-size: 1.4em;
-    }
 
     /*---------- Tablet content layout ----------*/
-    .portfolio {
-        width: 33%;
-        margin: 0 -5px 20px 0;
-    }
+
 
     /*---------- Tablet Contact and footer ----------*/
-    .contact p {
-        padding: 0 20%;
-        font-size: 1.2em;
-    }
+
 }
 
 /*---------- clearfix ----------*/
