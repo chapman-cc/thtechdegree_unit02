@@ -3,7 +3,6 @@
 /*--------- Basic element styling ---------*/
 * {
     box-sizing: border-box;
-    /* border: 1px red solid; */
 }
 
 body {
